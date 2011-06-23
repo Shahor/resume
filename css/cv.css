@@ -5,11 +5,16 @@ body
 	margin-top: 10px;
 }
 
-#pdfVersion
+#extras
 {
 	position: fixed;
 	right:100px;
 	top 50px;
+}
+
+#extras ul
+{
+	list-style-type: none;
 }
 
 #forkMeOnGithub
