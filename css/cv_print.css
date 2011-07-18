@@ -15,11 +15,6 @@ body
 	display: none;
 }
 
-#pdfDownload
-{
-	display: none;
-}
-
 header
 {
 	border: black dashed 1px;
@@ -51,9 +46,7 @@ address
 
 #contact
 {
-	position: absolute;
-	right: 10px;
-	top: 10px;
+	display: none;
 }
 
 .floatCleaner
