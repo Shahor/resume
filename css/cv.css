@@ -136,6 +136,7 @@ hr
 
 .skills
 {
+	position: relative;
 	padding-bottom: 5px;
 }
 
@@ -154,6 +155,15 @@ hr
 .skills p
 {
 	font-size: 13px;
+}
+
+.skillsDetails
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 30px;
+	
+	font-style: italic;
 }
 
 .tools
@@ -229,3 +239,7 @@ h3
 	margin-top: -10px;
 }
 
+.hidden
+{
+	display: none;
+}

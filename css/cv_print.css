@@ -129,6 +129,15 @@ hr
 	font-size: 13px;
 }
 
+.skillsDetails
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 30px;
+
+	font-style: italic;
+}
+
 .tools
 {
 	padding-bottom: 5px;
@@ -176,4 +185,9 @@ hr
 .pageBreak
 {
 	margin-top: 35px;
+}
+
+.hidden
+{
+	display: none;
 }
