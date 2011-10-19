@@ -1,4 +1,5 @@
 #!/bin/bash
+
 height=1680
 width=1050
 platform=`uname`
