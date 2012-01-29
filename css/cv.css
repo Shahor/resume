@@ -1,0 +1,245 @@
+body
+{
+	font-family: sans-serif;
+	width: 800px;
+	margin: auto;
+	margin-top: 10px;
+	background-color:#ff9;
+	color: #747980;
+	background-color: #e3e6ea;
+	text-shadow: 1px 1px 1px #fff;
+
+
+}
+
+#extras
+{
+	position: fixed;
+	right:100px;
+	top 50px;
+}
+
+#extras ul
+{
+	margin-top: 0px;
+	list-style-type: none;
+}
+
+#forkMeOnGithub
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+header
+{
+	border-style: none;
+	margin-bottom: 20px;
+	height: 170px;
+}
+
+h1
+{
+	padding-bottom: 3px;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	color: #1c8aab;
+	border-bottom: 2px solid #D5D9DE;
+}
+
+address
+{
+	font-weight: normal;
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+#visitCard
+{
+	padding-left: 0px;
+	padding-bottom: 30px;
+	padding-right: 0px;
+	padding-top: 30px;
+	position: relative;
+}
+
+#visitCard ul li
+{
+	list-style: none;
+}
+
+#contact
+{
+	position: absolute;
+	right: 10px;
+	top: 25px;
+}
+
+.floatCleaner
+{
+	clear: both;
+}
+
+section
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:10px;
+	padding-left:50px;
+}
+
+.experience p
+{
+	font-size: 13px;
+}
+
+.experience p span 
+{
+	float: right;
+	font-weight: bold;
+}
+
+hr
+{
+	padding: 0;
+	margin-top: 5px;
+}
+
+.experience
+{
+	margin-bottom: 20px;
+}
+.experience ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.experience ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.studies ul
+{
+		list-style: none;
+		margin-left: 40px;
+}
+
+.studies ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.skills
+{
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.skills ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.skills ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.skills p
+{
+	font-size: 13px;
+}
+
+.skillsDetails
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 30px;
+	
+	font-style: italic;
+}
+
+.tools
+{
+	padding-bottom: 5px;
+}
+
+.tools ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.tools ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.tools p
+{
+	font-size: 13px;
+}
+
+.personal
+{
+	padding-bottom: 5px;
+}
+
+.personal ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.personal ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.personal p
+{
+	font-size: 13px;
+}
+
+a
+{
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #dc3d00;
+}
+
+h2
+{
+	color: #1c8aab;
+	font-size: 26px;
+}
+
+h3
+{
+	padding-top: 3px;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #dc3d00;
+}
+
+#extras ul img
+{
+	margin-top: -10px;
+}
+
+.hidden
+{
+	display: none;
+}

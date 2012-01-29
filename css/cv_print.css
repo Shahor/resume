@@ -1,0 +1,193 @@
+body
+{
+	width: 800px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#extras
+{
+	display: none;
+}
+
+#forkMeOnGithub
+{
+	display: none;
+}
+
+header
+{
+	border: black dashed 1px;
+	margin-bottom: 20px;
+}
+
+h1
+{
+	font-size:1.2em;
+	color: green;
+	border-bottom: 2px green solid;
+}
+
+address
+{
+	font-style: normal;
+}
+
+#visitCard
+{
+	position: relative;
+	padding:10px;
+}
+
+#visitCard ul li
+{
+	list-style: none;
+}
+
+#contact
+{
+	display: none;
+}
+
+.floatCleaner
+{
+	clear: both;
+}
+
+section
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:10px;
+	padding-left:50px;
+}
+
+.experience p
+{
+	font-size: 13px;
+}
+
+.experience p span 
+{
+	float: right;
+	font-weight: bold;
+}
+
+hr
+{
+	padding: 0;
+	margin-top: 5px;
+}
+
+.experience
+{
+	margin-bottom: 20px;
+}
+.experience ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.experience ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.studies ul
+{
+		list-style: none;
+		margin-left: 40px;
+}
+
+.studies ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.skills
+{
+	padding-bottom: 5px;
+}
+
+.skills ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.skills ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.skills p
+{
+	font-size: 13px;
+}
+
+.skillsDetails
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 30px;
+
+	font-style: italic;
+}
+
+.tools
+{
+	padding-bottom: 5px;
+}
+
+.tools ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.tools ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.tools p
+{
+	font-size: 13px;
+}
+
+.personal
+{
+	padding-bottom: 5px;
+}
+
+.personal ul
+{
+	list-style: none;
+	margin-left: 40px;
+}
+
+.personal ul li
+{
+	font-size: 13px;
+	padding: 2px;
+}
+
+.personal p
+{
+	font-size: 13px;
+}
+
+.pageBreak
+{
+	margin-top: 35px;
+}
+
+.hiddenInPdf
+{
+	display: none;
+}
