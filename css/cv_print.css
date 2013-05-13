@@ -95,6 +95,13 @@ hr
 	padding: 2px;
 }
 
+.experience .wotithink {
+	padding: 0px;
+	font-style: italic;
+	font-size: 13px;
+	font-weight: lighter;
+}
+
 .studies ul
 {
 		list-style: none;
@@ -136,28 +143,6 @@ hr
 	margin-left: 30px;
 
 	font-style: italic;
-}
-
-.tools
-{
-	padding-bottom: 5px;
-}
-
-.tools ul
-{
-	list-style: none;
-	margin-left: 40px;
-}
-
-.tools ul li
-{
-	font-size: 13px;
-	padding: 2px;
-}
-
-.tools p
-{
-	font-size: 13px;
 }
 
 .personal
