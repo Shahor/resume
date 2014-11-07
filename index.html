@@ -1,238 +1,535 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>Alexandre Gaudencio's resume</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<link rel="stylesheet" href="css/cv.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/cv_print.css" type="text/css" media="print">
-</head>
-<body>
-	<div id="extras">
-		<ul>
-			<li>
-				<a href="index_en.html">
-					<img src="images/uk.png" height="24" width="39" alt="Uk version"/>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div id="forkMeOnGithub">
-		<a target="_blank" href="http://github.com/shahor">
-			<img src="images/forkMeOnGithub.png" height="135" width="206" alt="Fork me on github"/>
-		</a>
-	</div>
-	<header>
-		<article id="visitCard">
-			<address>
-				<span id="name"><h2>Alexandre Gaudencio</h2></span>
-				<h3>Développeur Web</h3><br/>
-				<p>
-					<p>
-						Titulaire Permis B
-					</p>
-					<b>Email : <u>alexandre@gaudencio.fr</u></b>
-				</p>
-			</address>
-			<address id="contact">
-				<a id="pdfDownload" href="files/resume.pdf">
-						<img src="images/cv_fr.png" alt="pdf.png"/>
-				</a>
-			</address>
-		</article>
-		<div class="floatCleaner"></div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+		<title>Alexandre Gaudencio's resume</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+		<style media="screen,print" type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+			body {
+				background: #fff;
+				font-family: Lato, sans-serif;
+				margin: 0 0 80px;
+			}
+			a {
+				color: #2ecc71;
+			}
+			a:focus,
+			a:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+			p {
+				line-height: 1.5;
+				margin: 0;
+			}
+			p + p {
+				margin-top: 10px;
+			}
+			h1,
+			h2,
+			h3,
+			h4 {
+				margin-top: 0
+			}
+			section {
+				margin-top: 30px;
+			}
+			li {
+				line-height: 1.8;
+				list-style: none;
+			}
+			li:before {
+				content: "\f052";
+				float: left;
+				font: 13px Octicons;
+				margin-top: 6px;
+				margin-left: -20px;
+				opacity: .1;
+				position: absolute;
+			}
+			blockquote {
+				border-left: 5px solid #e7e9ec;
+				font-size: 14px;
+			}
+			em {
+				color: #95a5a6;
+				font-weight: normal;
+				font-style: normal;
+			}
+			h4 span:first-child {
+				color: #000;
+				font-weight: bold;
+			}
+			.container {
+				max-width: 750px;
+				padding: 0 30px;
+			}
+			.col-sm-6 {
+				margin-bottom: 10px;
+			}
+			.col-sm-12 h4 {
+				margin-top: 12px;
+			}
+			.col-sm-12 + .col-sm-12 {
+				margin-top: 30px;
+			}
+			#header {
+				background: #f4f6f6;
+				padding: 50px 0;
+				margin-bottom: 30px;
+			}
+			#header h2 {
+				color: #95a5a6;
+				font-size: 24px;
+			}
+			#content h3 {
+				color: #f1c40f;
+				font-size: 26px;
+				margin-top: -4px;
+			}
+			#content aside {
+				text-align: left;
+				padding-right: 30px;
+			}
+			#profiles .network {
+				text-transform: capitalize;
+			}
+			#work .position,
+			#volunteer .position {
+				font-weight: bold;
+				margin-bottom: 8px;
+			}
+			#education .area {
+				font-weight: bold;
+			}
+			#education .area:before {
+				content: "\f0d7";
+				font: 16px Octicons;
+				margin-right: 6px;
+			}
+			#education .studyType {
+				margin-left: 25px;
+			}
+			#awards .summary,
+			#publications .summary {
+				margin-top: 8px;
+			}
+			#publications .website a:before {
+				content: attr(href);
+			}
+
+			@media (min-width: 480px) {
+				.strike-through {
+					border-top: 1px solid #f4f6f6;
+					height: 20px;
+					margin-top: 12px;
+					margin-bottom: -2px;
+					position: relative;
+				}
+				.strike-through span,
+				.strike-through a {
+					background: #fff;
+					position: absolute;
+				}
+				.strike-through span:first-child {
+					padding-right: 20px;
+					margin-top: -12px;
+				}
+				.strike-through span + span {
+					font-size: 14px;
+					margin-top: -10px;
+					padding-left: 20px;
+					right: 0;
+				}
+			}
+			@media (max-width: 768px) {
+				.col-sm-6:last-child {
+					margin-bottom: 0px;
+				}
+				#content aside {
+					margin-bottom: 20px;
+					padding-right: 0;
+					text-align: left;
+				}
+				#publications .website a:before {
+					content: "View publication";
+				}
+			}
+			@media (max-width: 480px) {
+				h1 {
+					font-size: 26px;
+				}
+				.date {
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+				.strike-through span:first-child {
+					margin-bottom: 7px;
+				}
+				.strike-through span {
+					display: block;
+				}
+				#header {
+					margin-bottom: 10px;
+					padding: 40px 0;
+				}
+				#actions {
+					display: none;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Alexandre Gaudencio
+					</h1>
+					<h2>
+						Frontend developer
+					</h2>
+				</div>
+			</div>
+		</div>
 	</header>
+	<div id="content" class="container">
 
-	<h1>Compétences</h1>
-	<section id="skills">
-		<article class="skills">
-			<p>
-				<b>Programmation</b>
-			</p>
-			<ul>
-
-					<li>
-						<p>
-							Php (expérimenté), MySQL (expérimenté)
-						</p>
-					</li>
-					<li>
-						<p>
-							Ruby <i>(intermédiaire)</i>
-						</p>
-						<p class="skillsDetails">
-							Rails (projets personnels, intermédiaire), rvm, rbenv
-						</p>
-					</li>
-
-					<li>
-						<p>
-							JavaScript (expérimenté)
-						</p>
-						<p class="skillsDetails">
-							Vanilla, Mootools, jQuery, Ajax, Node.js, UWA
-					</li>
-					<li>
-						<p>
-							Python <i>(débutant)</i>
-						</p>
-						<p class="skillsDetails">
-							Django (notions)
-						</p>
-					<li>
-					<li>
-						<p>
-							Html5, xHtml, CSS
-						</p>
-					</li>
-					<li>
-						<p>
-						C Unix (<i>intermédiaire</i>), Shell scripting
-						</p>
-						<p class="skillsDetails">
-
-						</p>
-					</li>
-					<li>
-						<p>
-							Objective-C <i>(débutant)</i>, MacRuby <i>(débutant)</i>
-						</p>
-					</li>
-			</ul>
-		</article>
-
-		<article class="skills">
-			<p>
-				<b>Traits personnels</b>
-			</p>
-			<ul>
-				<li>Motivé par les challenges, responsable, proactif</li>
-			</ul>
-		</article>
-
-		<article class="skills">
-			<p>
-				<b>Langues parlées</b>
-			</p>
-			<ul>
-				<li>Français / Portugais (Bilingue)</li>
-				<li>Anglais (parlé/écrit)</li>
-			</ul>
-		</article>
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email"><a target="_blank" href="mailto:alexandre@gaudencio.fr">alexandre@gaudencio.fr</a></div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(+33) 06 51 32 77 93</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a target="_blank" href="http://alexandre.gaudencio.fr">http://alexandre.gaudencio.fr</a>
+				</div>
+			</div>
+			</div>
+		</div>
 	</section>
 
-	<h1>Expérience</h1>
-	<section id="proExperiences">
-		<article class="experience">
-				<p>
-					<b>Netvibes (<a href="http://netvibes.com" target="_blank">Netvibes</a>)</b>
-					<span>
-						Depuis le 23 janvier 2012
-					</span>
-				</p>
-				<hr/>
-				<ul>
-					<li>- Développeur front office (Javascript)</li>
-					<li>- Performances et UI/UX</li>
-					<li>- Nouvelles fonctionnalités
-						<ul>
-							<li>- Tab wizard</li>
-							<li>- Chargement progressif des widgets</li>
-							<li>- Autres, pas encore annoncés</li>
-						</ul>
-					</li>
-					<li>- Participation au développement de certaines fonctionnalités backend
-						<ul>
-							<li>- Sélecteurs de status de privacité des dashboards</li>
-							<li>- Nouvelle création intelligente d'onglets</li>
-						</ul>
-					</li>
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Front end</h4>
+				</div>
+				<ul class="keywords">
+					<li>Vanilla JavaScript (ES5/ES6)</li>
+					<li>ReactJS</li>
+					<li>UWA</li>
+					<li>jQuery</li>
+					<li>Mootools</li>
+					<li>HTML5</li>
+					<li>CSS 2/3</li>
 				</ul>
-		</article>
-
-		<article class="experience">
-				<p>
-					<b>Edagora - sa (<a href="http://voyance.avigora.com" target="_blank">voyance.avigora.com</a>)</b>
-					<span>
-						29 septembre 2008 - 18 Novembre 2011
-					</span>
-				</p>
-				<hr/>
-				<ul>
-					<li>- Développeur PHP5</li>
-					<li>- Développement de nouvelles fonctionnalités (xHtml, PHP5 oo, Javascript)</li>
-					<li>- Responsable des développements sur la plateforme Facebook</li>
-						<ul>
-							<li>- http://apps.facebook.com/tarot-de-marseille/ (Développée par KRDS, le projet a été repris en interne)</li>
-							<li>- http://apps.facebook.com/numerologie-voyance/</li>
-							<li>- http://apps.facebook.com/scan-ta-main/</li>
-							<li>- http://apps.facebook.com/quiz-tarot/</li>
-						</ul>
-					</li>
-					<li>- Solution de chat avec AMFPHP, ActionScript 3 et <abbr title="Server side action script">SSAS</abbr></li>
-					<li>- Développement de divers outils de backoffice</li>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Backend</h4>
+				</div>
+				<ul class="keywords">
+					<li>nodejs</li>
+					<li>PHP5</li>
+					<li>MySQL</li>
+					<li>Ruby</li>
 				</ul>
-		</article>
-
-		<article class="experience">
-			<p>
-				<b>Projet scolaire</b>
-			</p>
-			<hr/>
-			<ul>
-				<li>- Chef de projet de la solution <b><a href="http://code.google.com/p/agrego/" target="_blank">Agrego </a></b> (http://agrego.net) qui est un agrégateur de connexions xDSL, <u><b>open source</b></u></li>
-			</ul>
-		</article>
-
-		<article class="experience">
-			<p>
-				<b>Bnp Paribas</b>
-				<span>
-					Février à Septembre 2008
-				</span>
-			</p>
-			<hr/>
-			<ul>
-				<li>- Gestion des traitements batch (Vérification, test et réorganisation des jobs dans la chaîne de traitement).
-				<li>- Migrations et restaurations de base de données</li>
-			</ul>
-		</article>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Frameworks</h4>
+				</div>
+				<ul class="keywords">
+					<li>Ruby on rails 4</li>
+					<li>Zend Framework 1.19</li>
+					<li>UWA (http://uwa.netvibes.com)</li>
+				</ul>
+			</div>
+			</div>
+		</div>
 	</section>
 
-	<h1>Études</h1>
-	<section id="studies">
-		<article class="studies">
-			<ul>
-				<li>2010 - Maitrise en informatique <abbr title="Ecole des Technologies Numériques Appliquées">ETNA</abbr></li>
-				<li>2007 - BTS Systèmes électroniques</li>
-				<li>2005 - Baccalauréat STI GE</li>
-			</ul>
-		</article>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a target="_blank" href="http://twitter.com/shahor">Shahor</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a target="_blank" href="https://github.com/Shahor">Shahor</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						SoundCloud
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a target="_blank" href="https://soundcloud.com/shahor">shahor</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LastFM
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a target="_blank" href="http://www.last.fm/user/Shahor">shahor</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section class="pageBreak"></section> <!-- not-very-pretty Page break (for pdf version) -->
-
-	<h1>Autres / Passions</h1>
-	<section id="personal">
-		<article class="personal">
-			<ul>
-				<li>Musicien (Guitare, Batterie) depuis 2003</li>
-				<li>Parachutisme (depuis 2009), Soufflerie (Chute libre en intérieur)</li>
-				<li>Jeux vidéo (depuis toujours)</li>
-			</ul>
-		</article>
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Netvibes</span>
+					<span class="date">
+						2012-01-23 — Currently
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a target="_blank" href="http://www.netvibes.com">http://www.netvibes.com</a>
+				</div>
+				<div class="position">
+					Frontend engineer
+				</div>
+				<div class="summary">
+					<p>Founded in 2005, Netvibes pioneered the first personalized dashboard publishing platform for the Web. For consumers, Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives. For agencies and publishers, Netvibes’ universal widget technology (UWA), widget distribution services and Premium Dashboards help rapidly deliver brand observation rooms and user-personalized marketing campaigns. For companies, Netvibes Enterprise delivers secure, scalable personalized workspaces, portals and industry dashboards.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Helping develop an exciting new feature not yet announced!</li>
+					<li class="bullet">Fully in charge of the frontend (and some backend) of Misodata (http://goo.gl/4j5jcc)</li>
+					<li class="bullet">New wysiwyg editor to allow our clients to custom their personnal emails</li>
+					<li class="bullet">Progressive loading of widgets</li>
+					<li class="bullet">Helped revamp the Reader part of netvibes (http://goo.gl/MsWvWC)</li>
+					<li class="bullet">New features and maintenance of UWA framework</li>
+					<li class="bullet">New Dashboard wizard</li>
+					<li class="bullet">New tab wizard</li>
+					<li class="bullet">Spring cleaning tool (http://goo.gl/xwKXI0)</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Edagora-sa</span>
+					<span class="date">
+						2008-09-29 — 2011-11-18
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a target="_blank" href="http://www.edagora-sa.com/">http://www.edagora-sa.com/</a>
+				</div>
+				<div class="position">
+					Full stack developer
+				</div>
+				<div class="summary">
+					<p>Edagora&#x27;s specialty is connecting people through phone with an emphasis on secure payments and privacy.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Development and maintenance of a Facebook app</li>
+					<li class="bullet">Chat counselling. I was in charge of both the server and the client</li>
+					<li class="bullet">Rewrote the whole agenda system to make it simpler and more efficient</li>
+					<li class="bullet">Full stack admin solution to keep track of all the counsellings</li>
+				</ul>
+			</div>
+			</div>
+		</div>
 	</section>
 
-	<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-22833751-1']);
-	_gaq.push(['_trackPageview']);
 
-	(function() {
-	 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	 })();
-	</script>
-</body>
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>ETNA (Epitech)</span>
+					<span class="date">
+						2007-10-01 — 2010-09-01
+					</span>
+				</h4>
+				<div class="area">
+					Engineering school
+				</div>
+				<div class="studyType">
+					Master
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Lycée Gustave Eiffel</span>
+					<span class="date">
+						2005-09-01 — 2007-05-01
+					</span>
+				</h4>
+				<div class="area">
+					Electronics
+				</div>
+				<div class="studyType">
+					BTS Systèmes électroniques (Equivalent to an Associate Degree with Electronics major)
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Lycée Gustave Eiffel</span>
+					<span class="date">
+						2002-09-01 — 2005-05-01
+					</span>
+				</h4>
+				<div class="area">
+					Electronics
+				</div>
+				<div class="studyType">
+					Baccalauréat STI GE (Equivalent to High School diploma with Electronics major)
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Portuguese</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>French</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Average
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Music</h4>
+				</div>
+				<ul class="keywords">
+					<li>Guitar</li>
+					<li>Singing</li>
+					<li>Drums</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Sports</h4>
+				</div>
+				<ul class="keywords">
+					<li>Skydive</li>
+					<li>Rock-climbing</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="references" class="row">
+		<aside class="col-sm-3">
+			<h3>References</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>Alexandre is a passionate developer with great skills. He is able to deal with problems and solve them. He is also a calm person who knows exactly how to handle pressure and has the ability to learn and understand things fast.</p>
+					<p class="name">
+						<strong>— Marcio Costa Silva</strong>
+					</p>
+				</blockquote>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+
+	</body>
 </html>
