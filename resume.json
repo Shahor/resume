@@ -26,6 +26,11 @@
         "url": "https://github.com/Shahor"
       },
       {
+        "network": "Talentoday",
+        "username": "Shahor",
+        "url": "https://www.talentoday.com/users/alexandre-gaudencio"
+      },
+      {
         "network": "SoundCloud",
         "username": "shahor",
         "url": "https://soundcloud.com/shahor"
@@ -43,7 +48,7 @@
       "position": "Front-end engineer",
       "website": "http://www.netvibes.com",
       "startDate": "2012-01-23",
-      "summary": "Founded in 2005, Netvibes pioneered the first personalized dashboard publishing platform for the Web. For consumers, Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives. For agencies and publishers, Netvibes’ universal widget technology (UWA), widget distribution services and Premium Dashboards help rapidly deliver brand observation rooms and user-personalized marketing campaigns. For companies, Netvibes Enterprise delivers secure, scalable personalized workspaces, portals and industry dashboards.",
+      "summary": "Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives.",
       "highlights": [
         "Helping develop an exciting new feature not yet announced!",
         "Fully in charge of the front-end (and some backend) of Misodata (http://goo.gl/4j5jcc)",
