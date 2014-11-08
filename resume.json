@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Alexandre Gaudencio",
-    "label": "Frontend developer",
-    "picture": "https://scontent-a-fra.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/422660_10151162806569799_627968506_n.jpg?oh=7b0d12969ebfdea740be8c0bed5646e8&oe=54D9E4CB",
+    "label": "Front-end developer",
+    "picture": "images/profile-150x150.png",
     "email": "alexandre@gaudencio.fr",
     "phone": "(+33) 06 51 32 77 93",
     "website": "http://alexandre.gaudencio.fr",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "summary": "Hello, I am Alexandre and I am a front-end developer. I currently live in the beautiful city of Paris. I love building good UI's and bringing the users the best experience I can. Also, my code doesn't wear semicolons, but it's fine.",
     "location": {
       "address": "16 rue lucien selva, bâtiment B",
       "postalCode": "94200",
@@ -40,13 +40,13 @@
   "work": [
     {
       "company": "Netvibes",
-      "position": "Frontend engineer",
+      "position": "Front-end engineer",
       "website": "http://www.netvibes.com",
       "startDate": "2012-01-23",
       "summary": "Founded in 2005, Netvibes pioneered the first personalized dashboard publishing platform for the Web. For consumers, Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives. For agencies and publishers, Netvibes’ universal widget technology (UWA), widget distribution services and Premium Dashboards help rapidly deliver brand observation rooms and user-personalized marketing campaigns. For companies, Netvibes Enterprise delivers secure, scalable personalized workspaces, portals and industry dashboards.",
       "highlights": [
         "Helping develop an exciting new feature not yet announced!",
-        "Fully in charge of the frontend (and some backend) of Misodata (http://goo.gl/4j5jcc)",
+        "Fully in charge of the front-end (and some backend) of Misodata (http://goo.gl/4j5jcc)",
         "New wysiwyg editor to allow our clients to custom their personnal emails",
         "Progressive loading of widgets",
         "Helped revamp the Reader part of netvibes (http://goo.gl/MsWvWC)",
@@ -68,6 +68,19 @@
         "Chat counselling. I was in charge of both the server and the client",
         "Rewrote the whole agenda system to make it simpler and more efficient",
         "Full stack admin solution to keep track of all the counsellings"
+      ]
+    },
+    {
+      "company": "Agrego",
+      "position": "Agrego : End-of-study project's manager",
+      "website": "https://github.com/Agrego/Agrego",
+      "startDate": "2008-02-01",
+      "endDate": "2010-09-01",
+      "summary": "Developped as our graduation project, Agrego is an open source network link agregator written in C. Want to have faster a connection but your provider can't offer you that? Why not put two together and add their performance?!",
+      "highlights": [
+        "Management of the project",
+        "Coordinating a team of 5",
+        "Learned about how to create virtual interfaces and use them"
       ]
     }
   ],
@@ -105,7 +118,7 @@
   "publications": [],
   "skills": [
     {
-      "name": "Front end",
+      "name": "Front-end",
       "level": "Advanced",
       "keywords": [
         "Vanilla JavaScript (ES5/ES6)",

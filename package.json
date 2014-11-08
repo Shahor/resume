@@ -5,8 +5,8 @@
   "description": "My resume, using jsonresume (https://jsonresume.org/)",
   "main": "index.js",
   "scripts": {
-    "gen": "resume export resume --format html -t flat ; mv resume.html index.html",
-    "serve": "resume serve"
+    "gen": "resume export resume --format html -t elegant_fork ; mv resume.html index.html",
+    "serve": "resume serve -t elegant_fork"
   },
   "repository": {
     "type": "git",

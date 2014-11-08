@@ -1,535 +1,284 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-
-		<title>Alexandre Gaudencio's resume</title>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-
-		<style media="screen,print" type="text/css">
-			@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Alexandre Gaudencio</title>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<style>
 			body {
-				background: #fff;
-				font-family: Lato, sans-serif;
-				margin: 0 0 80px;
+				font-family: 'Lato';
+				background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/snow.png");
 			}
-			a {
-				color: #2ecc71;
+
+			.oswald-font {
+				font-family: 'oswald';
+				vertical-align: bottom;
 			}
-			a:focus,
+
+			.name {
+				text-transform: uppercase;
+			}
+
 			a:hover {
-				color: #f1c40f;
 				text-decoration: none;
 			}
-			p {
-				line-height: 1.5;
-				margin: 0;
-			}
-			p + p {
-				margin-top: 10px;
-			}
-			h1,
-			h2,
-			h3,
-			h4 {
-				margin-top: 0
-			}
-			section {
-				margin-top: 30px;
-			}
-			li {
-				line-height: 1.8;
-				list-style: none;
-			}
-			li:before {
-				content: "\f052";
-				float: left;
-				font: 13px Octicons;
-				margin-top: 6px;
-				margin-left: -20px;
-				opacity: .1;
-				position: absolute;
-			}
-			blockquote {
-				border-left: 5px solid #e7e9ec;
-				font-size: 14px;
-			}
-			em {
-				color: #95a5a6;
-				font-weight: normal;
-				font-style: normal;
-			}
-			h4 span:first-child {
-				color: #000;
-				font-weight: bold;
-			}
-			.container {
-				max-width: 750px;
-				padding: 0 30px;
-			}
-			.col-sm-6 {
-				margin-bottom: 10px;
-			}
-			.col-sm-12 h4 {
-				margin-top: 12px;
-			}
-			.col-sm-12 + .col-sm-12 {
-				margin-top: 30px;
-			}
-			#header {
-				background: #f4f6f6;
-				padding: 50px 0;
-				margin-bottom: 30px;
-			}
-			#header h2 {
-				color: #95a5a6;
-				font-size: 24px;
-			}
-			#content h3 {
-				color: #f1c40f;
-				font-size: 26px;
-				margin-top: -4px;
-			}
-			#content aside {
-				text-align: left;
-				padding-right: 30px;
-			}
-			#profiles .network {
-				text-transform: capitalize;
-			}
-			#work .position,
-			#volunteer .position {
-				font-weight: bold;
-				margin-bottom: 8px;
-			}
-			#education .area {
-				font-weight: bold;
-			}
-			#education .area:before {
-				content: "\f0d7";
-				font: 16px Octicons;
-				margin-right: 6px;
-			}
-			#education .studyType {
-				margin-left: 25px;
-			}
-			#awards .summary,
-			#publications .summary {
-				margin-top: 8px;
-			}
-			#publications .website a:before {
-				content: attr(href);
+
+			.link-github {
+				color: #454545;
 			}
 
-			@media (min-width: 480px) {
-				.strike-through {
-					border-top: 1px solid #f4f6f6;
-					height: 20px;
-					margin-top: 12px;
-					margin-bottom: -2px;
-					position: relative;
-				}
-				.strike-through span,
-				.strike-through a {
-					background: #fff;
-					position: absolute;
-				}
-				.strike-through span:first-child {
-					padding-right: 20px;
-					margin-top: -12px;
-				}
-				.strike-through span + span {
-					font-size: 14px;
-					margin-top: -10px;
-					padding-left: 20px;
-					right: 0;
-				}
+			.link-github:hover {
+				color: black;
 			}
-			@media (max-width: 768px) {
-				.col-sm-6:last-child {
-					margin-bottom: 0px;
-				}
-				#content aside {
-					margin-bottom: 20px;
-					padding-right: 0;
-					text-align: left;
-				}
-				#publications .website a:before {
-					content: "View publication";
-				}
+
+			.link-twitter {
+				color: #33CCFF;
 			}
-			@media (max-width: 480px) {
-				h1 {
-					font-size: 26px;
-				}
-				.date {
-					font-size: 14px;
-					margin-bottom: 5px;
-				}
-				.strike-through span:first-child {
-					margin-bottom: 7px;
-				}
-				.strike-through span {
-					display: block;
-				}
-				#header {
-					margin-bottom: 10px;
-					padding: 40px 0;
-				}
-				#actions {
-					display: none;
-				}
+
+			.social-link {
+				margin-left: 5px;
+			}
+
+			.social-link:first-child {
+				margin-left: 0;
+			}
+
+			.link-blog {
+				color: rgb(243, 111, 36);
+			}
+
+			.link-blog:hover {
+				color: rgb(211, 97, 32);
+			}
+
+			.summary {
+				font-family: "Pt mono";
+				font-size: 1.2em;
+			}
+
+			.wip {
+				position: absolute;
+				right: 0;
+			}
+
+			.item-detail h3 {
+				margin-top: 0;
 			}
 		</style>
-
 	</head>
+
 	<body>
-
-	<header id="header">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Alexandre Gaudencio
-					</h1>
-					<h2>
-						Frontend developer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email"><a target="_blank" href="mailto:alexandre@gaudencio.fr">alexandre@gaudencio.fr</a></div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(+33) 06 51 32 77 93</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a target="_blank" href="http://alexandre.gaudencio.fr">http://alexandre.gaudencio.fr</a>
+			<div class="col-md-10 col-md-offset-1">
+			<br>
+				<div class="col-md-2">
+        				<img class="media-object img-circle pull-right"
+							data-src="holder.js/64x64" alt="64x64" src="images&#x2F;profile-150x150.png"
+							style="width: 150px; height: 150px;">
 				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Front end</h4>
-				</div>
-				<ul class="keywords">
-					<li>Vanilla JavaScript (ES5/ES6)</li>
-					<li>ReactJS</li>
-					<li>UWA</li>
-					<li>jQuery</li>
-					<li>Mootools</li>
-					<li>HTML5</li>
-					<li>CSS 2/3</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Backend</h4>
-				</div>
-				<ul class="keywords">
-					<li>nodejs</li>
-					<li>PHP5</li>
-					<li>MySQL</li>
-					<li>Ruby</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Frameworks</h4>
-				</div>
-				<ul class="keywords">
-					<li>Ruby on rails 4</li>
-					<li>Zend Framework 1.19</li>
-					<li>UWA (http://uwa.netvibes.com)</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Twitter
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a target="_blank" href="http://twitter.com/shahor">Shahor</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a target="_blank" href="https://github.com/Shahor">Shahor</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						SoundCloud
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a target="_blank" href="https://soundcloud.com/shahor">shahor</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LastFM
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a target="_blank" href="http://www.last.fm/user/Shahor">shahor</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Netvibes</span>
-					<span class="date">
-						2012-01-23 — Currently
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a target="_blank" href="http://www.netvibes.com">http://www.netvibes.com</a>
-				</div>
-				<div class="position">
-					Frontend engineer
-				</div>
-				<div class="summary">
-					<p>Founded in 2005, Netvibes pioneered the first personalized dashboard publishing platform for the Web. For consumers, Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives. For agencies and publishers, Netvibes’ universal widget technology (UWA), widget distribution services and Premium Dashboards help rapidly deliver brand observation rooms and user-personalized marketing campaigns. For companies, Netvibes Enterprise delivers secure, scalable personalized workspaces, portals and industry dashboards.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Helping develop an exciting new feature not yet announced!</li>
-					<li class="bullet">Fully in charge of the frontend (and some backend) of Misodata (http://goo.gl/4j5jcc)</li>
-					<li class="bullet">New wysiwyg editor to allow our clients to custom their personnal emails</li>
-					<li class="bullet">Progressive loading of widgets</li>
-					<li class="bullet">Helped revamp the Reader part of netvibes (http://goo.gl/MsWvWC)</li>
-					<li class="bullet">New features and maintenance of UWA framework</li>
-					<li class="bullet">New Dashboard wizard</li>
-					<li class="bullet">New tab wizard</li>
-					<li class="bullet">Spring cleaning tool (http://goo.gl/xwKXI0)</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Edagora-sa</span>
-					<span class="date">
-						2008-09-29 — 2011-11-18
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a target="_blank" href="http://www.edagora-sa.com/">http://www.edagora-sa.com/</a>
-				</div>
-				<div class="position">
-					Full stack developer
-				</div>
-				<div class="summary">
-					<p>Edagora&#x27;s specialty is connecting people through phone with an emphasis on secure payments and privacy.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Development and maintenance of a Facebook app</li>
-					<li class="bullet">Chat counselling. I was in charge of both the server and the client</li>
-					<li class="bullet">Rewrote the whole agenda system to make it simpler and more efficient</li>
-					<li class="bullet">Full stack admin solution to keep track of all the counsellings</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>ETNA (Epitech)</span>
-					<span class="date">
-						2007-10-01 — 2010-09-01
-					</span>
-				</h4>
-				<div class="area">
-					Engineering school
-				</div>
-				<div class="studyType">
-					Master
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Lycée Gustave Eiffel</span>
-					<span class="date">
-						2005-09-01 — 2007-05-01
-					</span>
-				</h4>
-				<div class="area">
-					Electronics
-				</div>
-				<div class="studyType">
-					BTS Systèmes électroniques (Equivalent to an Associate Degree with Electronics major)
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Lycée Gustave Eiffel</span>
-					<span class="date">
-						2002-09-01 — 2005-05-01
-					</span>
-				</h4>
-				<div class="area">
-					Electronics
-				</div>
-				<div class="studyType">
-					Baccalauréat STI GE (Equivalent to High School diploma with Electronics major)
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Portuguese</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>French</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Fluent
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Spanish</strong>
-				</div>
-				<div class="fluency">
-					Average
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Music</h4>
-				</div>
-				<ul class="keywords">
-					<li>Guitar</li>
-					<li>Singing</li>
-					<li>Drums</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Sports</h4>
-				</div>
-				<ul class="keywords">
-					<li>Skydive</li>
-					<li>Rock-climbing</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="references" class="row">
-		<aside class="col-sm-3">
-			<h3>References</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>Alexandre is a passionate developer with great skills. He is able to deal with problems and solve them. He is also a calm person who knows exactly how to handle pressure and has the ability to learn and understand things fast.</p>
-					<p class="name">
-						<strong>— Marcio Costa Silva</strong>
+				<div class="col-md-10">
+					<h1 class="name oswald-font">Alexandre Gaudencio</h1>
+					<hr>
+					<p class="location text col-md-6">
+						<span class="fa fa-location-arrow"></span>
+						16 rue lucien selva, bâtiment B, Paris, Paris, FR 94200
+						<br>
+						<span class="social-links-wrapper">
+							<a href="http:&#x2F;&#x2F;twitter.com&#x2F;shahor" target="_blank">Twitter</a>&nbsp;&nbsp;
+							<a href="https:&#x2F;&#x2F;github.com&#x2F;Shahor" target="_blank">Github</a>&nbsp;&nbsp;
+							<a href="https:&#x2F;&#x2F;soundcloud.com&#x2F;shahor" target="_blank">SoundCloud</a>&nbsp;&nbsp;
+							<a href="http:&#x2F;&#x2F;www.last.fm&#x2F;user&#x2F;Shahor" target="_blank">LastFM</a>&nbsp;&nbsp;
+						</span>
 					</p>
-				</blockquote>
-			</div>
+					<p class="location text-right col-md-6">
+						<span class="fa fa-envelope"></span>
+						<a href="mailto:alexandre@gaudencio.fr">alexandre@gaudencio.fr</a>
+						<br>
+						<span class="fa fa-phone"></span>
+						(+33) 06 51 32 77 93
+						<br>
+						<span class="fa fa-rss-square"></span>
+						<a target="_blank" href="http:&#x2F;&#x2F;alexandre.gaudencio.fr">http:&#x2F;&#x2F;alexandre.gaudencio.fr</a>
+						<br>
+					</p>
+				</div>
+				<div class="col-md-12">
+					<hr>
+					<p class="summary">
+						<sup class="fa fa-quote-left"></sup>
+						Hello, I am Alexandre and I am a front-end developer. I currently live in the beautiful city of Paris. I love building good UI&#39;s and bringing the users the best experience I can. Also, my code doesn&#39;t wear semicolons, but it&#39;s fine.
+						<sup class="fa fa-quote-right"></sup>
+					</p>
+				</div>
+				<div class="col-md-12">
+					<h2 class="oswald-font"><span class="fa fa-building-o"></span>&nbsp; Work Experience</h3>
+					<hr>
+					<div class="col-md-10">
+							<div class="item-detail">
+								<h3>
+									<span>Front-end engineer</span>
+									<span class="pull-right">( 2012 - Present )</span>
+								</h3>
+								<h4>
+									<a target="_blank" href="http:&#x2F;&#x2F;www.netvibes.com">
+										@Netvibes
+									</a>
+								</h4>
+								<p class="text-muted">Founded in 2005, Netvibes pioneered the first personalized dashboard publishing platform for the Web. For consumers, Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives. For agencies and publishers, Netvibes’ universal widget technology (UWA), widget distribution services and Premium Dashboards help rapidly deliver brand observation rooms and user-personalized marketing campaigns. For companies, Netvibes Enterprise delivers secure, scalable personalized workspaces, portals and industry dashboards.</p>
+							</div>
+							<ul>
+								<li>Helping develop an exciting new feature not yet announced!</li>
+								<li>Fully in charge of the front-end (and some backend) of Misodata (http:&#x2F;&#x2F;goo.gl&#x2F;4j5jcc)</li>
+								<li>New wysiwyg editor to allow our clients to custom their personnal emails</li>
+								<li>Progressive loading of widgets</li>
+								<li>Helped revamp the Reader part of netvibes (http:&#x2F;&#x2F;goo.gl&#x2F;MsWvWC)</li>
+								<li>New features and maintenance of UWA framework</li>
+								<li>New Dashboard wizard</li>
+								<li>New tab wizard</li>
+								<li>Spring cleaning tool (http:&#x2F;&#x2F;goo.gl&#x2F;xwKXI0)</li>
+							</ul>
+							<hr>
+							<div class="item-detail">
+								<h3>
+									<span>Full stack developer</span>
+									<span class="pull-right">( 2008 - 2011 )</span>
+								</h3>
+								<h4>
+									<a target="_blank" href="http:&#x2F;&#x2F;www.edagora-sa.com&#x2F;">
+										@Edagora-sa
+									</a>
+								</h4>
+								<p class="text-muted">Edagora&#39;s specialty is connecting people through phone with an emphasis on secure payments and privacy.</p>
+							</div>
+							<ul>
+								<li>Development and maintenance of a Facebook app</li>
+								<li>Chat counselling. I was in charge of both the server and the client</li>
+								<li>Rewrote the whole agenda system to make it simpler and more efficient</li>
+								<li>Full stack admin solution to keep track of all the counsellings</li>
+							</ul>
+							<hr>
+							<div class="item-detail">
+								<h3>
+									<span>Agrego : End-of-study project&#39;s manager</span>
+									<span class="pull-right">( 2008 - 2010 )</span>
+								</h3>
+								<h4>
+									<a target="_blank" href="https:&#x2F;&#x2F;github.com&#x2F;Agrego&#x2F;Agrego">
+										Agrego
+									</a>
+								</h4>
+								<p class="text-muted">Developped as our graduation project, Agrego is an open-source network link agregator written in C. Want to have faster a connection but your provider can&#39;t offer you that? Why not put two together and add their performance?!</p>
+							</div>
+							<ul>
+								<li>Management of the project</li>
+								<li>Coordinating a team of 5</li>
+								<li>Learned about how to create virtual interfaces and use them</li>
+							</ul>
+							<hr>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h2 class="oswald-font"><span class="fa fa-university"></span>&nbsp; Education</h2>
+					<hr>
+					<div class="col-md-10">
+							<div class="item-detail">
+								<h3>ETNA (Epitech)</h3>
+								<h4>Engineering school, Master</h4>
+
+								<h5>2007 - 2010</h5>
+							</div>
+							<ul>
+							</ul>
+							<hr>
+							<div class="item-detail">
+								<h3>Lycée Gustave Eiffel</h3>
+								<h4>Electronics, BTS Systèmes électroniques (Equivalent to an Associate Degree with Electronics major)</h4>
+
+								<h5>2005 - 2007</h5>
+							</div>
+							<ul>
+							</ul>
+							<hr>
+							<div class="item-detail">
+								<h3>Lycée Gustave Eiffel</h3>
+								<h4>Electronics, Baccalauréat STI GE (Equivalent to High School diploma with Electronics major)</h4>
+
+								<h5>2002 - 2005</h5>
+							</div>
+							<ul>
+							</ul>
+							<hr>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h2 class="oswald-font"><span class="fa fa-mortar-board"></span>&nbsp; Skills</h2>
+					<hr>
+					<div class="col-md-10">
+							<h4> Front-end </h4>
+							<h5><b>Advanced</b></h5>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">Vanilla JavaScript (ES5&#x2F;ES6)</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">ReactJS</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">UWA</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">jQuery</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">Mootools</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">HTML5</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">CSS 2&#x2F;3</span>
+							<hr>
+							<h4> Backend </h4>
+							<h5><b>Intermediate</b></h5>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">nodejs</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">php5</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">MySQL</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">Ruby</span>
+							<hr>
+							<h4> Frameworks </h4>
+							<h5><b></b></h5>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">Ruby on rails 4</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">Zend Framework 1.19</span>
+								<span class="badge" style="background-color : #67809F;padding: 0.5em 0.5em 5px 0.5em;margin: 0 0 5px 0;">UWA (http:&#x2F;&#x2F;uwa.netvibes.com)</span>
+							<hr>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h2 class="oswald-font"><span class="fa fa-group"></span>&nbsp; Volunteerism</h3>
+					<hr>
+					<div class="col-md-10">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h2 class="oswald-font"><span class="fa fa-book"></span>&nbsp; Hobbies</h2>
+					<hr>
+					<div class="col-md-10">
+						<ul>
+								<li><div class="item-detail">
+									<h5>Music</h5>
+								</div>
+								<ul>
+									<li>Guitar</li>
+									<li>Singing</li>
+									<li>Drums</li>
+								</ul></li>
+								<li><div class="item-detail">
+									<h5>Sports</h5>
+								</div>
+								<ul>
+									<li>Skydive</li>
+									<li>Rock-climbing</li>
+								</ul></li>
+						</ul>
+						<hr>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
 
-	</div>
-
+		<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	</body>
 </html>
