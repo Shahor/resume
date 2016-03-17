@@ -1,0 +1,196 @@
+{
+  "basics": {
+    "name": "Alexandre Gaudencio",
+    "label": "Front-end developer",
+    "picture": "images/profile-150x150.png",
+    "email": "alexandre@gaudencio.fr",
+    "phone": "",
+    "website": "http://alexandre.gaudencio.fr",
+    "summary": "Hello, I am Alexandre and I am a front-end developer. I currently live in the beautiful city of Paris. I love building good UIs and bringing the users the best experience I can. Also, my code doesn't wear semicolons, but it's fine.",
+    "location": {
+      "address": "",
+      "postalCode": "69006",
+      "city": "Lyon",
+      "countryCode": "FR",
+      "region": "Rhône-Alpes"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "Shahor",
+        "url": "http://twitter.com/shahor"
+      },
+      {
+        "network": "Github",
+        "username": "Shahor",
+        "url": "https://github.com/Shahor"
+      },
+      {
+          "network": "Instagram",
+          "username": "Shahor",
+          "url" : "https://www.instagram.com/shahor/"
+      },
+      {
+        "network": "SoundCloud",
+        "username": "shahor",
+        "url": "https://soundcloud.com/shahor"
+      },
+      {
+        "network": "LastFM",
+        "username": "shahor",
+        "url": "http://www.last.fm/user/Shahor"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Webschool Factory",
+      "position": "Speaker/Teacher for 2nd year students" ,
+      "website": "http://www.webschoolfactory.fr/",
+      "startDate": "2015-10-01",
+      "endDate": "2016-01-19",
+      "summary": "40 hour module of Javascript with beginners",
+      "highlights": [ ]
+    },
+    {
+      "company": "Netvibes",
+      "position": "Front-end engineer",
+      "website": "http://www.netvibes.com",
+      "startDate": "2012-01-23",
+      "endDate" : "2016-04-25",
+      "summary": "Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives.",
+      "highlights": [
+        "Main NodeJs developer for Netvibes' [IoT solution](http://www.netvibes.com/en/dashboardofthings)",
+        "Fully in charge of the front-end (and some backend) of [Misodata](http://goo.gl/4j5jcc)",
+        "New wysiwyg editor to allow our clients to custom their personnal [email campaigns](http://blog.netvibes.com/new-pushmail-editor-now-available/)",
+        "Helped revamp Netvibes' [Reader view](http://goo.gl/MsWvWC)",
+        "[Spring cleaning tool](http://goo.gl/xwKXI0)"
+      ]
+    },
+    {
+      "company": "Edagora-sa",
+      "position": "Full stack developer",
+      "website": "http://www.edagora-sa.com/",
+      "startDate": "2008-09-29",
+      "endDate": "2011-11-18",
+      "summary": "Edagora's specialty is connecting people through phone with an emphasis on secure payments and privacy.",
+      "highlights": [
+        "Development and maintenance of a [Facebook app](https://apps.facebook.com/tarot-de-marseille/)",
+        "Chat counselling. I was in charge of both the server and the client",
+        "Rewrote the whole agenda system to make it simpler and more efficient",
+        "Full stack admin solution to keep track of all the counsellings"
+      ]
+    },
+    {
+      "company": "Agrego",
+      "position": "Agrego : Dev lead end-of-study project",
+      "website": "https://github.com/Agrego/Agrego",
+      "startDate": "2008-02-01",
+      "endDate": "2010-09-01",
+      "summary": "Developped as our graduation project, Agrego is an open source network link agregator written in C. You want to have faster a connection but your provider can't offer you that? Why not put two together and add their performance?!",
+      "highlights": [
+        "Management of the project",
+        "Coordinating a team of 5",
+        "Learned about how to create virtual interfaces and use them"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "ETNA (Epitech), Paris, France",
+      "area": "Engineering school",
+      "studyType": "Master",
+      "startDate": "2007-10-01",
+      "endDate": "2010-09-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Lycée Gustave Eiffel, Gagny, France",
+      "area": "Electronics",
+      "studyType": "BTS Systèmes électroniques (Equivalent to an Associate Degree with Electronics major)",
+      "startDate": "2005-09-01",
+      "endDate": "2007-05-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Lycée Gustave Eiffel, Gagny, France",
+      "area": "Electronics",
+      "studyType": "Baccalauréat STI GE (Equivalent to High School diploma with Electronics major)",
+      "startDate": "2002-09-01",
+      "endDate": "2005-05-01",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Front-end",
+      "level": "Advanced",
+      "keywords": [
+        "Nodejs",
+        "React",
+        "Webpack", "Gulp",
+        "Vanilla JavaScript (ES5/ES6)",
+        "HTML5",
+        "CSS 2/3"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Intermediate",
+      "keywords": [
+        "Ruby",
+        "PHP",
+        "Redis",
+        "Cassandra",
+        "MySQL"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Average"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Singing",
+        "Drums"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords": [
+        "Skydive",
+        "Rock-climbing"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Marcio Costa Silva",
+      "reference": "Alexandre is a passionate developer with great skills. He is able to deal with problems and solve them. He is also a calm person who knows exactly how to handle pressure and has the ability to learn and understand things fast."
+    }
+  ]
+}

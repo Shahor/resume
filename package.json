@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "resume",
+  "version": "0.0.1",
+  "description": "My resume, using jsonresume (https://jsonresume.org/)",
+  "main": "index.js",
+  "scripts": {
+    "html": "resume export resume --format html -t elegant_fork ; mv resume.html index.html",
+    "render": "resume export resume --format html -t elegant_fork ; mv resume.html index.html; ./linkMaker && echo 'Ok o/'",
+    "pdf": "resume export resume --format pdf -t elegant_fork",
+    "serve": "resume serve -t elegant_fork"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Shahor/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahor/resume/issues"
+  },
+  "homepage": "https://github.com/Shahor/resume",
+  "dependencies": {
+    "resume-cli": "^0.4.11"
+  },
+  "devDependencies": {
+    "html-entities": "^1.2.0"
+  }
+}

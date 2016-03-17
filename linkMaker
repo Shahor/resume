@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const Fs = require('fs')
+const HtmlEntities = require('html-entities').AllHtmlEntities
+
+const File = "./index.html"
+const Entities = new HtmlEntities();
+
+Fs.readFile(File, 'utf8', (error, content) => {
+	if (error) {
+		console.log("Error", error.message)
+		process.exit(1)
+	}
+
+	let regexp = /\[(.*)\]\(.*\)/g
+
+	content = content.replace(regexp, (match) => {
+		const linkName = match.match(/\[(.*)\]/).pop(),
+			link = match.match(/\((.*)\)/)[1]
+
+		return `<a href="${Entities.decode(link)}" target="_blank">${linkName}</a>`
+	})
+
+	Fs.writeFile(File, content, (err) => {
+		if (err) {
+			console.log("Error", error.message)
+			process.exit(1)
+		}
+
+		process.exit(0)
+	})
+})
