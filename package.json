@@ -5,7 +5,9 @@
   "description": "My resume, using jsonresume (https://jsonresume.org/)",
   "main": "index.js",
   "scripts": {
-    "gen": "resume export resume --format html -t elegant_fork ; mv resume.html index.html",
+    "html": "resume export resume --format html -t elegant_fork ; mv resume.html index.html",
+    "render": "resume export resume --format html -t elegant_fork ; mv resume.html index.html; ./linkMaker && echo 'Ok o/'",
+    "pdf": "resume export resume --format pdf -t elegant_fork",
     "serve": "resume serve -t elegant_fork"
   },
   "repository": {
@@ -22,7 +24,9 @@
   },
   "homepage": "https://github.com/Shahor/resume",
   "dependencies": {
-    "resume-cli": "^0.3.10",
-    "phantom": "^0.7.0"
+    "resume-cli": "^0.4.11"
+  },
+  "devDependencies": {
+    "html-entities": "^1.2.0"
   }
 }

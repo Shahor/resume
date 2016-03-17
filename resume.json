@@ -4,15 +4,15 @@
     "label": "Front-end developer",
     "picture": "images/profile-150x150.png",
     "email": "alexandre@gaudencio.fr",
-    "phone": "(+33) 06 51 32 77 93",
+    "phone": "",
     "website": "http://alexandre.gaudencio.fr",
-    "summary": "Hello, I am Alexandre and I am a front-end developer. I currently live in the beautiful city of Paris. I love building good UI's and bringing the users the best experience I can. Also, my code doesn't wear semicolons, but it's fine.",
+    "summary": "Hello, I am Alexandre and I am a front-end developer. I currently live in the beautiful city of Paris. I love building good UIs and bringing the users the best experience I can. Also, my code doesn't wear semicolons, but it's fine.",
     "location": {
-      "address": "16 rue lucien selva, bâtiment B",
-      "postalCode": "94200",
-      "city": "Paris",
+      "address": "",
+      "postalCode": "69006",
+      "city": "Lyon",
       "countryCode": "FR",
-      "region": "Paris"
+      "region": "Rhône-Alpes"
     },
     "profiles": [
       {
@@ -26,9 +26,9 @@
         "url": "https://github.com/Shahor"
       },
       {
-        "network": "Talentoday",
-        "username": "Shahor",
-        "url": "https://www.talentoday.com/users/alexandre-gaudencio"
+          "network": "Instagram",
+          "username": "Shahor",
+          "url" : "https://www.instagram.com/shahor/"
       },
       {
         "network": "SoundCloud",
@@ -44,21 +44,27 @@
   },
   "work": [
     {
+      "company": "Webschool Factory",
+      "position": "Speaker/Teacher for 2nd year students" ,
+      "website": "http://www.webschoolfactory.fr/",
+      "startDate": "2015-10-01",
+      "endDate": "2016-01-19",
+      "summary": "40 hour module of Javascript with beginners",
+      "highlights": [ ]
+    },
+    {
       "company": "Netvibes",
       "position": "Front-end engineer",
       "website": "http://www.netvibes.com",
       "startDate": "2012-01-23",
+      "endDate" : "2016-04-25",
       "summary": "Netvibes.com is the most awarded startpage where millions of people around the world personalize and publish all aspects of their daily digital lives.",
       "highlights": [
-        "Helping develop an exciting new feature not yet announced!",
-        "Fully in charge of the front-end (and some backend) of Misodata (http://goo.gl/4j5jcc)",
-        "New wysiwyg editor to allow our clients to custom their personnal emails",
-        "Progressive loading of widgets",
-        "Helped revamp the Reader part of netvibes (http://goo.gl/MsWvWC)",
-        "New features and maintenance of UWA framework",
-        "New Dashboard wizard",
-        "New tab wizard",
-        "Spring cleaning tool (http://goo.gl/xwKXI0)"
+        "Main NodeJs developer for Netvibes' [IoT solution](http://www.netvibes.com/en/dashboardofthings)",
+        "Fully in charge of the front-end (and some backend) of [Misodata](http://goo.gl/4j5jcc)",
+        "New wysiwyg editor to allow our clients to custom their personnal [email campaigns](http://blog.netvibes.com/new-pushmail-editor-now-available/)",
+        "Helped revamp Netvibes' [Reader view](http://goo.gl/MsWvWC)",
+        "[Spring cleaning tool](http://goo.gl/xwKXI0)"
       ]
     },
     {
@@ -69,7 +75,7 @@
       "endDate": "2011-11-18",
       "summary": "Edagora's specialty is connecting people through phone with an emphasis on secure payments and privacy.",
       "highlights": [
-        "Development and maintenance of a Facebook app",
+        "Development and maintenance of a [Facebook app](https://apps.facebook.com/tarot-de-marseille/)",
         "Chat counselling. I was in charge of both the server and the client",
         "Rewrote the whole agenda system to make it simpler and more efficient",
         "Full stack admin solution to keep track of all the counsellings"
@@ -77,11 +83,11 @@
     },
     {
       "company": "Agrego",
-      "position": "Agrego : End-of-study project's manager",
+      "position": "Agrego : Dev lead end-of-study project",
       "website": "https://github.com/Agrego/Agrego",
       "startDate": "2008-02-01",
       "endDate": "2010-09-01",
-      "summary": "Developped as our graduation project, Agrego is an open source network link agregator written in C. Want to have faster a connection but your provider can't offer you that? Why not put two together and add their performance?!",
+      "summary": "Developped as our graduation project, Agrego is an open source network link agregator written in C. You want to have faster a connection but your provider can't offer you that? Why not put two together and add their performance?!",
       "highlights": [
         "Management of the project",
         "Coordinating a team of 5",
@@ -126,11 +132,10 @@
       "name": "Front-end",
       "level": "Advanced",
       "keywords": [
+        "Nodejs",
+        "React",
+        "Webpack", "Gulp",
         "Vanilla JavaScript (ES5/ES6)",
-        "ReactJS",
-        "UWA",
-        "jQuery",
-        "Mootools",
         "HTML5",
         "CSS 2/3"
       ]
@@ -139,19 +144,11 @@
       "name": "Backend",
       "level": "Intermediate",
       "keywords": [
-        "nodejs",
-        "php5",
-        "MySQL",
-        "Ruby"
-      ]
-    },
-    {
-      "name": "Frameworks",
-      "level": "",
-      "keywords": [
-        "Ruby on rails 4",
-        "Zend Framework 1.19",
-        "UWA (http://uwa.netvibes.com)"
+        "Ruby",
+        "PHP",
+        "Redis",
+        "Cassandra",
+        "MySQL"
       ]
     }
   ],
